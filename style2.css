@@ -1,0 +1,245 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+*{
+    font-family: arial;
+    padding: 0;
+    margin: 0;
+    
+    
+ }
+ 
+ 
+ header{
+    position: fixed;
+    top:0; left: 0; right: 0;
+    background: transparent;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+    
+ }
+ 
+ header .navbar a{
+        font-size: 15px;
+        border-radius: 50px;
+        padding: .5rem 1.5rem;
+        color: white;
+        text-decoration: none;
+    
+ }
+ 
+ header .navbar a.active, 
+ header .navbar a:hover{
+    -ms-transform-origin-y: 10px;
+    color: white; 
+    background: black;
+ }
+ 
+ header .logo{
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        text-decoration: none;
+ }
+ 
+.banner {
+    display: block;
+     max-width: fit-content;
+     max-height:max-content;
+     position: relative;
+     z-index: -1;
+ }
+.banner .name{
+    position: absolute;
+    bottom: 580px;
+    left: 40px;
+    color: white;
+    padding-left: 40;
+    padding-right: 50;
+    font-size: 60px;
+}
+
+.banner .name{
+    text-transform: uppercase;
+    background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 60px;
+}
+ 
+@keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+
+.dishes{
+    background-image:url(media/bg1.jpg);
+    width: auto;
+    background-repeat: no-repeat;
+}
+
+ .sub-heading {
+        text-align: center;
+        color: red;
+        font-size: 25px;
+        padding-top: 30px;
+ }
+ .main-heading {
+        text-align: center;
+        color: white;
+        font-size: 35px;
+        padding-top: 10px;
+        padding-bottom: 50px;
+ }
+ 
+ .dishes .box-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+        gap: 1.5rem;
+ }
+ 
+ .dishes .box-container .box {
+    padding: 2.5rem;
+    background: transparent;
+    border-radius: .5rem;
+    border: .1rem solid rgb(0,0,0,.2);
+    box-shadow: black;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+ }
+ .dishes .box-container .box img{
+    height: 17rem;
+    margin: 1rem 0;
+ }
+ .dishes .box-container .box h3{
+    color: black;
+    font-size: 2.5rem;
+ }
+ .dishes .box-container .box .stars{
+    padding: 1rem 0;
+    
+ }
+ .dishes .box-container .box .stars i{
+    font-size: 1.7rem;
+    color: green;
+ }
+ .dishes .box-container .box span{
+    color: black;
+    font-size: 2.5rem;
+    margin-right: 1rem;
+    font-weight: bolder;
+ }
+ .btn {
+    color: white;
+    background-color: red;
+    border-radius: 30px;
+    padding: .8rem 3rem;
+    margin-top: 10px;
+    font-size: 1.7 rem;
+ }
+ .btn:hover{
+    background-color: green;
+    letter-spacing: .1rem;
+ }
+ section{
+    padding: 2rem 9%;
+ }
+ 
+ .about {
+   background-image:url(media/bg1.jpg);
+    background-color: #17202A;
+ }
+ 
+ .about .row {
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+ }
+ .about .row .image {
+    flex: 1 1 30rem;
+    
+ }
+ .about .row .image img{
+    width: 60%;
+ }
+
+ .about .row .image img:hover{
+     transform: translateY(-10px);
+     transition: 0.3s;
+ } 
+ 
+ .about .row .content {
+    flex: 1 1 30rem;
+ }
+ 
+ .about .row .content h3{
+    color: red;
+    font-size: 70px;
+    padding: 10px;
+ }
+ .about .row .content p{
+    color: white;
+    font-size: 30px;
+    padding: 30px;
+    margin-bottom: 20px;
+    
+ }
+ .about .row .content .btn2{
+    
+    color: white;
+    background-color: red;
+    border-radius: 30px;
+    padding: 1rem 2rem;
+    margin-top: 50px;
+    font-size: 1.7 rem;
+    text-decoration: none;
+ }
+ .about .row .content .btn2:hover{
+    background-color: green;
+    letter-spacing: .05rem;
+    transition: 0.3s;
+ }
+    
+ .footer .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.5rem;
+    
+ }
+ 
+ .footer .container .box h3{
+    font-size: 2.5rem;
+    color: red;
+    padding: .5rem 0;
+ }
+ .footer .container .box a{
+    display: block;
+    font-size: 30px;
+    color: black;
+    padding: .5rem 0;
+    text-decoration: none;
+ }
+ 
